@@ -56,7 +56,7 @@
 
 **Leads arriving in Google Sheets**
 
-![Leads sheet](screenshots/06-leads-sheet.png)
+![Leads sheet](screenshots/07-tool-execution.png)
 
 ---
 
@@ -179,6 +179,6 @@ I build AI agents and automations for small businesses. This project was built e
 
 **Open to freelance projects and AI automation roles.**
 
-[LinkedIn](https://linkedin.com/in/your-profile) · [GitHub](https://github.com/your-username) · [Email](mailto:your-email@example.com)
+[LinkedIn](www.linkedin.com/in/franklyn-orkeghen-34bb40441e) · [GitHub](https://github.com/orkeghenfranklyn) · [Email](orkeghenfranklyn@gmail.com)
 
 <p align="center"><sub>Sample brand and fictional data. Built with n8n and Google Gemini.</sub></p>
