@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dookuture FAQ Agent: Live Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; line-height: 1.6; color: #1a1a1a; }
+    h1 { margin-bottom: 4px; }
+    .tag { color: #555; margin-top: 0; }
+    .note { background: #fff8e1; border-left: 4px solid #f5a623; padding: 12px 16px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Dookuture FAQ Agent</h1>
+  <p class="tag">A live demo of an AI customer-service agent built with n8n and Google Gemini.</p>
+
+  <p>Open the chat button at the bottom right and try:</p>
+  <ul>
+    <li>Do you open on Sundays?</li>
+    <li>How much is a senator set?</li>
+    <li>Do you sell bags? (it will ask for contact details)</li>
+  </ul>
+
+  <p class="note"><strong>Demo notes.</strong> Dookuture is a fictional brand. Please use fake names and numbers only. Messages are processed by Google Gemini's free tier. The chat is switched on only during demos, so if it doesn't reply, see the
+  <a href="https://github.com/YOUR-GITHUB-USERNAME/dookuture-faq-chatbot">project repository</a> for screenshots and the demo video.</p>
+
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://frankies-015.app.n8n.cloud/webhook/8fb68edd-a15a-4628-b552-dd7aac8a9674/chat',
+      initialMessages: [
+        'Hi! 👋 Welcome to Dookuture.',
+        'Ask me about prices, delivery, sizes or returns.'
+      ],
+      i18n: {
+        en: {
+          title: 'Dookuture Assistant',
+          subtitle: 'Prices, delivery, sizes and returns.',
+          footer: '',
+          getStarted: 'New Conversation',
+          inputPlaceholder: 'Type your question...'
+        }
+      }
+    });
+  </script>
+</body>
+    </html>
